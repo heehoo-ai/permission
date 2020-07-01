@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rbac/templatetags/rbac.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffy_permission/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffy_permission/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/service/init_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/service/init_permission.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +273,7 @@
       <workItem from="1592897409356" duration="3715000" />
       <workItem from="1593306962985" duration="17080000" />
       <workItem from="1593564238289" duration="378000" />
-      <workItem from="1593564618569" duration="7848000" />
+      <workItem from="1593564618569" duration="10321000" />
     </task>
     <servers />
   </component>
