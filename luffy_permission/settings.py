@@ -165,6 +165,7 @@ FILE_UPLOAD_DIRECTORY_PERMISSIONS = None
 # ######################### 权限相关配置 ############################
 
 PERMISSION_SESSION_KEY = "luffy_permission_url_list_key"
+MENU_SESSION_KEY = "luffy_permission_menu_list_key"
 VALID_URL_LIST = [
     '/login/',
     '/admin/.*'

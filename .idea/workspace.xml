@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/luffy_permission.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/luffy_permission.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/templatetags/rbac.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffy_permission/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffy_permission/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/service/init_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/service/init_permission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +276,7 @@
       <workItem from="1592897409356" duration="3715000" />
       <workItem from="1593306962985" duration="17080000" />
       <workItem from="1593564238289" duration="378000" />
-      <workItem from="1593564618569" duration="2141000" />
+      <workItem from="1593564618569" duration="7848000" />
     </task>
     <servers />
   </component>
@@ -308,6 +308,17 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593573925470" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rbac/templatetags/rbac.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
