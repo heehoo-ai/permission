@@ -8,6 +8,9 @@ class Permission(models.Model):
     title = models.CharField(verbose_name='标题', max_length=32)
     url = models.CharField(verbose_name='含正则的URL', max_length=128)
 
+    is_menu = models.BooleanField(verbose_name="是否可以做菜单", default=False)
+    icon = models.CharField(verbose_name="图标", max_length=32, null=True, blank=True)
+
     def __str__(self):
         return self.title
 
