@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/rbac/static/rbac/css/rbac.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/static/rbac/js/rbac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/templates/rbac/multi_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/service/init_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/service/init_permission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templatetags/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templatetags/rbac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,22 +28,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>FileUP</find>
-      <find>FILE_UPLOAD_MAX_MEMORY_SIZE</find>
-      <find>DATA_UPLOAD_MAX_MEMORY_SIZE</find>
-      <find>collapse</find>
-      <find>navbar-nav</find>
-      <find>navbar-collapse</find>
-      <find>nav</find>
-      <find>.nav {</find>
-      <find>.nav .left-menu .menu-item</find>
-    </findStrings>
-    <dirStrings>
-      <dir>/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,7 +170,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/templates/rbac" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="options.lastSelected" value="File.Encoding" />
@@ -199,14 +189,14 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/static/plugins" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\django_study\permission\rbac\templates\rbac" />
+      <recent name="C:\django_study\permission\rbac" />
       <recent name="$PROJECT_DIR$/web/static/imgs" />
       <recent name="$PROJECT_DIR$/web/static/css" />
       <recent name="$PROJECT_DIR$/web/templates" />
-      <recent name="$PROJECT_DIR$/web/files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/static/plugins" />
     </key>
   </component>
@@ -273,7 +263,7 @@
       <workItem from="1592897409356" duration="3715000" />
       <workItem from="1593306962985" duration="17080000" />
       <workItem from="1593564238289" duration="378000" />
-      <workItem from="1593564618569" duration="10321000" />
+      <workItem from="1593564618569" duration="21316000" />
     </task>
     <servers />
   </component>
@@ -285,10 +275,10 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state x="2059" y="0" key="#models/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593574081534" />
-    <state x="2143" y="119" key="FileChooserDialogImpl" timestamp="1593564614836">
+    <state x="2143" y="119" key="FileChooserDialogImpl" timestamp="1593674628413">
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
-    <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593564614836" />
+    <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593674628413" />
     <state width="1323" height="141" key="GridCell.Tab.0.bottom" timestamp="1593573925470">
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
@@ -305,17 +295,6 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593573925470" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rbac/templatetags/rbac.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

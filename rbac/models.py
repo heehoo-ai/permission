@@ -20,7 +20,6 @@ class Permission(models.Model):
 
     menu = models.ForeignKey(to='Menu', verbose_name='所属菜单', null=True, blank=True, on_delete=models.CASCADE, help_text='null表示不是菜单；非null表示是二级菜单')
 
-
     def __str__(self):
         return self.title
 
