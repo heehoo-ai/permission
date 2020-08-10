@@ -18,7 +18,10 @@ class Permission(models.Model):
     title = models.CharField(verbose_name='标题', max_length=32)
     url = models.CharField(verbose_name='含正则的URL', max_length=128)
 
-    menu = models.ForeignKey(to='Menu', verbose_name='所属菜单', null=True, blank=True, on_delete=models.CASCADE, help_text='null表示不是菜单；非null表示是二级菜单')
+    menu = models.ForeignKey(to='Menu', verbose_name='所属菜单', null=True, blank=True,
+                             on_delete=models.CASCADE, help_text='null表示不是菜单；非null表示是二级菜单')
+    pid = models.ForeignKey(to='Permission', null=True,blank=True, on_delete=models.CASCADE, verbose_name='关联的权限',
+                            related_name='parents', help_text='对于非菜单权限需要选择一个可以成为菜单的权限，用户做默认展开和选中菜单')
 
     def __str__(self):
         return self.title

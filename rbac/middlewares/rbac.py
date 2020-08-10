@@ -35,10 +35,11 @@ class RbacMiddleware(MiddlewareMixin):
 
         flag = False
 
-        for url in permission_list:
-            reg = "^%s$" % url
+        for item in permission_list:
+            reg = "^%s$" % item['url']
             if re.match(reg, current_url):
                 flag = True
+                request.current_selected_permission = item['pid'] or item['id']
                 break
 
         if not flag:

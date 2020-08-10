@@ -37,8 +37,9 @@ def multi_menu(request):
         val['class'] = 'hide'
 
         for per in val['children']:
-            regex = "^%s$" % (per['url'],)
-            if re.match(regex, request.path_info):
+            # regex = "^%s$" % (per['url'],)
+            # if re.match(regex, request.path_info):
+            if per['id'] == request.current_selected_permission:
                 per['class'] = 'active'
                 val['class'] = ''
         ordered_dict[key] = val
