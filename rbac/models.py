@@ -17,7 +17,7 @@ class Permission(models.Model):
     """
     title = models.CharField(verbose_name='标题', max_length=32)
     url = models.CharField(verbose_name='含正则的URL', max_length=128)
-
+    name = models.CharField(verbose_name='URL别名', max_length=32, unique=True)
     menu = models.ForeignKey(to='Menu', verbose_name='所属菜单', null=True, blank=True,
                              on_delete=models.CASCADE, help_text='null表示不是菜单；非null表示是二级菜单')
     pid = models.ForeignKey(to='Permission', null=True,blank=True, on_delete=models.CASCADE, verbose_name='关联的权限',

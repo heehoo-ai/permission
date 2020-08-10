@@ -45,3 +45,20 @@ def multi_menu(request):
         ordered_dict[key] = val
 
     return {'menu_dict': ordered_dict}
+
+
+@register.inclusion_tag('rbac/breadcrumb.html')
+def breadcrumb(request):
+    return {'record_list': request.breadcrumb}
+
+
+@register.filter
+def has_permission(request, name):
+    """
+    判断是否有权限
+    :param request:
+    :param name:
+    :return:
+    """
+    if name in request.session[settings.PERMISSION_SESSION_KEY]:
+        return True

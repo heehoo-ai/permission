@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/rbac/templates/rbac/breadcrumb.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/middlewares/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/middlewares/rbac.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/service/init_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/service/init_permission.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/templatetags/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templatetags/rbac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/customer_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/customer_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/payment_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/payment_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +171,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/luffy_permission（示例七点五）/luffy_permission" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/templates/rbac" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="options.lastSelected" value="File.Encoding" />
@@ -186,15 +190,15 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/static/plugins" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\django_study\permission\rbac\templates\rbac" />
       <recent name="C:\django_study\permission\rbac" />
       <recent name="$PROJECT_DIR$/web/static/imgs" />
       <recent name="$PROJECT_DIR$/web/static/css" />
       <recent name="$PROJECT_DIR$/web/templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/static/plugins" />
     </key>
   </component>
   <component name="RunManager" selected="Python.models">
@@ -269,7 +273,7 @@
       <workItem from="1595208982331" duration="1757000" />
       <workItem from="1596414600889" duration="2946000" />
       <workItem from="1596428480514" duration="3553000" />
-      <workItem from="1597019952643" duration="4021000" />
+      <workItem from="1597019952643" duration="13288000" />
     </task>
     <servers />
   </component>
@@ -281,10 +285,10 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state x="2059" y="0" key="#models/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593574081534" />
-    <state x="2143" y="119" key="FileChooserDialogImpl" timestamp="1597023606596">
+    <state x="2143" y="119" key="FileChooserDialogImpl" timestamp="1597035480065">
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
-    <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1597023606596" />
+    <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1597035480065" />
     <state width="1323" height="141" key="GridCell.Tab.0.bottom" timestamp="1593573925470">
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
