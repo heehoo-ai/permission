@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rbac/forms/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbac/service/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbac/views/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/forms/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/luffy_permission.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/luffy_permission.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templatetags/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templatetags/rbac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/forms/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/forms/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/views/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/views/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +174,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/forms" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="options.lastSelected" value="File.Encoding" />
@@ -189,15 +193,15 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/static/plugins" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\django_study\permission\rbac\service" />
       <recent name="C:\django_study\permission\rbac\forms" />
+      <recent name="C:\django_study\permission\rbac\service" />
       <recent name="C:\django_study\permission\rbac\templates\rbac" />
       <recent name="C:\django_study\permission\rbac\views" />
       <recent name="C:\django_study\permission\rbac" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/static/plugins" />
     </key>
   </component>
   <component name="RunManager" selected="Python.models">
@@ -273,6 +277,7 @@
       <workItem from="1596414600889" duration="2946000" />
       <workItem from="1596428480514" duration="3553000" />
       <workItem from="1597019952643" duration="25269000" />
+      <workItem from="1597625476214" duration="9375000" />
     </task>
     <servers />
   </component>
@@ -280,6 +285,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597650367863">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597650367863" />
     <state x="536" y="96" key="#menu" timestamp="1597286248762">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -288,10 +297,10 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state x="2059" y="0" key="#models/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593574081534" />
-    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1597286058916">
+    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1597650065742">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="569" y="165" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597286058916" />
+    <state x="569" y="165" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597650065742" />
     <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1597130530818" />
     <state width="1323" height="141" key="GridCell.Tab.0.bottom" timestamp="1593573925470">
       <screen x="1680" y="0" width="1366" height="728" />
@@ -309,6 +318,14 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593573925470" />
+    <state x="341" y="149" key="SettingsEditor" timestamp="1597625792773">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="149" key="SettingsEditor/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597625792773" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1597652527628">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597652527628" />
   </component>
   <component name="masterDetails">
     <states>
