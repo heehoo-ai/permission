@@ -62,3 +62,8 @@ class SecondMenuModelForm(BootStrapModelForm):
         model = models.Permission
         exclude = ['pid']
 
+
+class PermissionModelForm(BootStrapModelForm):
+    class Meta:
+        model = models.Permission
+        fields = ['title', 'name', 'url']
