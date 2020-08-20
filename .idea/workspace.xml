@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/rbac/service/routers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffy_permission/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffy_permission/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/forms/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/forms/menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" afterDir="false" />
@@ -168,13 +170,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/forms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rbac/templates/rbac" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="options.lastSelected" value="File.Encoding" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -188,9 +190,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\django_study\permission\rbac\forms" />
-      <recent name="C:\django_study\permission\rbac\service" />
       <recent name="C:\django_study\permission\rbac\templates\rbac" />
+      <recent name="C:\django_study\permission\rbac\service" />
+      <recent name="C:\django_study\permission\rbac\forms" />
       <recent name="C:\django_study\permission\rbac\views" />
       <recent name="C:\django_study\permission\rbac" />
     </key>
@@ -271,7 +273,7 @@
       <workItem from="1596414600889" duration="2946000" />
       <workItem from="1596428480514" duration="3553000" />
       <workItem from="1597019952643" duration="25269000" />
-      <workItem from="1597625476214" duration="21516000" />
+      <workItem from="1597625476214" duration="27581000" />
     </task>
     <servers />
   </component>
@@ -291,11 +293,11 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state x="2059" y="0" key="#models/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593574081534" />
-    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1597650065742">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="2143" y="119" key="FileChooserDialogImpl" timestamp="1597910071478">
+      <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state x="569" y="165" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597650065742" />
-    <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1597130530818" />
+    <state x="2143" y="119" key="FileChooserDialogImpl/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1597910071478" />
     <state width="1323" height="141" key="GridCell.Tab.0.bottom" timestamp="1593573925470">
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
@@ -312,10 +314,11 @@
       <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1593573925470" />
-    <state x="341" y="149" key="SettingsEditor" timestamp="1597625792773">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="1957" y="17" key="SettingsEditor" timestamp="1597908947842">
+      <screen x="1680" y="0" width="1366" height="728" />
     </state>
     <state x="341" y="149" key="SettingsEditor/0.0.1680.1010/1680.0.1366.728@0.0.1680.1010" timestamp="1597625792773" />
+    <state x="1957" y="17" key="SettingsEditor/0.0.1680.1010/1680.0.1366.728@1680.0.1366.728" timestamp="1597908947842" />
     <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1597652527628">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

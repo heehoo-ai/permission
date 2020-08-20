@@ -68,7 +68,8 @@
                 <div class="panel-heading">
                     <i class="fa fa-calculator" aria-hidden="true"></i> 二级菜单
                     {% if menu_id %}
-                        <a href="{% memory_url request 'rbac:second_menu_add' menu_id=menu_id %}" class="right btn btn-success btn-xs"
+                        <a href="{% memory_url request 'rbac:second_menu_add' menu_id=menu_id %}"
+                           class="right btn btn-success btn-xs"
                            style="padding: 2px 8px;margin: -3px;">
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                             新建
@@ -98,11 +99,13 @@
                             </td>
 
                             <td>
-                                <a style="color: #333333;" href="{% memory_url request 'rbac:second_menu_edit' pk=row.id %}">
+                                <a style="color: #333333;"
+                                   href="{% memory_url request 'rbac:second_menu_edit' pk=row.id %}">
                                     <i class="fa fa-edit" aria-hidden="true"></i></a>
 
 
-                                <a style="color: #d9534f;" href="{% memory_url request 'rbac:second_menu_del' pk=row.id %}"><i
+                                <a style="color: #d9534f;"
+                                   href="{% memory_url request 'rbac:second_menu_del' pk=row.id %}"><i
                                         class="fa fa-trash-o"></i></a>
 
                             </td>
@@ -135,6 +138,7 @@
                     {% endif %}
 
 
+
                 </div>
 
                 <!-- Table -->
@@ -157,18 +161,20 @@
                             </td>
 
                             <td>
-                                <a style="color: #333333;" href="{% memory_url request 'rbac:permission_edit' pk=row.id %}">
+                                <a style="color: #333333;"
+                                   href="{% memory_url request 'rbac:permission_edit' pk=row.id %}">
                                     <i class="fa fa-edit" aria-hidden="true"></i></a>
 
 
-                                <a style="color: #d9534f;" href="{% memory_url request 'rbac:permission_del' pk=row.id %}"><i
+                                <a style="color: #d9534f;"
+                                   href="{% memory_url request 'rbac:permission_del' pk=row.id %}"><i
                                         class="fa fa-trash-o"></i></a>
 
                             </td>
                         </tr>
 
                         <tr">
-                            <td colspan="2" style="border-top: 0">{{ row.url }}</td>
+                        <td colspan="2" style="border-top: 0">{{ row.url }}</td>
                         </tr>
 
                     {% endfor %}

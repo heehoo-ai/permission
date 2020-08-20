@@ -1,13 +1,16 @@
 """
 菜单和权限管理
 """
+from collections import OrderedDict
+from django.forms import formset_factory
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from rbac import models
-from rbac.forms.menu import MenuModelForm, SecondMenuModelForm, PermissionModelForm
+from rbac.forms.menu import MenuModelForm, SecondMenuModelForm, PermissionModelForm, MultiAddPermissionForm, \
+    MultiEditPermissionForm
 from rbac.service.urls import memory_reverse
-
+from rbac.service.routers import get_all_url_dict
 
 def menu_list(request):
     """
@@ -229,3 +232,72 @@ def permission_del(request, pk):
 
     models.Permission.objects.filter(id=pk).delete()
     return redirect(url)
+
+
+def multi_permissions(request):
+    """
+    批量操作权限
+    :param request:
+    :return:
+    """
+
+    # 1. 获取项目中所有的URL
+    all_url_dict = get_all_url_dict()
+    """
+    {
+        'rbac:role_list':{'name': 'rbac:role_list', 'url': '/rbac/role/list/'},
+        'rbac:role_add':{'name': 'rbac:role_add', 'url': '/rbac/role/add/'},
+        ....
+    }
+    """
+    router_name_set = set(all_url_dict.keys())
+
+    # 2. 获取数据库中所有的URL
+    permissions = models.Permission.objects.all().values('id', 'title', 'name', 'url', 'menu_id', 'pid_id')
+    permission_dict = OrderedDict()
+    permission_name_set = set()
+    for row in permissions:
+        permission_dict[row['name']] = row
+        permission_name_set.add(row['name'])
+    """
+    {
+        'rbac:role_list': {'id':1,'title':'角色列表',name:'rbac:role_list',url.....},
+        'rbac:role_add': {'id':1,'title':'添加角色',name:'rbac:role_add',url.....},
+        ...
+    }
+    """
+
+    for name, value in permission_dict.items():
+        router_row_dict = all_url_dict.get(name)  # {'name': 'rbac:role_list', 'url': '/rbac/role/list/'},
+        if not router_row_dict:
+            continue
+        if value['url'] != router_row_dict['url']:
+            value['url'] = '路由和数据库中不一致'
+
+    # 3. 应该添加、删除、修改的权限有哪些？
+
+    # 3.1 计算出应该增加的name
+    generate_name_list = router_name_set - permission_name_set
+    generate_formset_class = formset_factory(MultiAddPermissionForm, extra=0)
+    generate_formset = generate_formset_class(
+        initial=[row_dict for name, row_dict in all_url_dict.items() if name in generate_name_list])
+
+    # 3.2 计算出应该删除的name
+    delete_name_list = permission_name_set - router_name_set
+    delete_row_list = [row_dict for name, row_dict in permission_dict.items() if name in delete_name_list]
+
+    # 3.3 计算出应该更新的name
+    update_name_list = permission_name_set & router_name_set
+    update_formset_class = formset_factory(MultiEditPermissionForm, extra=0)
+    update_formset = update_formset_class(
+        initial=[row_dict for name, row_dict in permission_dict.items() if name in update_name_list])
+
+    return render(
+        request,
+        'rbac/multi_permissions.html',
+        {
+            'generate_formset': generate_formset,
+            'delete_row_list':delete_row_list,
+            'update_formset':update_formset,
+        }
+    )

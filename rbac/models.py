@@ -8,8 +8,10 @@ class Menu(models.Model):
     title = models.CharField(verbose_name='菜单名称', max_length=32)
     icon = models.CharField(verbose_name="图标", max_length=32)
 
-    def __str__(self):
-        return self.title
+
+def __str__(self):
+    return self.title
+
 
 class Permission(models.Model):
     """
@@ -49,6 +51,7 @@ class UserInfo(models.Model):
 
     def __str__(self):
         return self.name
+
 
 """
 current_user = models.UserInfo.objects.filter(name=user, password=pwd).first()
