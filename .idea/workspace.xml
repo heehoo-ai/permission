@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rbac/service/routers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffy_permission/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffy_permission/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/forms/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/forms/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/views/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/views/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +265,7 @@
       <workItem from="1596414600889" duration="2946000" />
       <workItem from="1596428480514" duration="3553000" />
       <workItem from="1597019952643" duration="25269000" />
-      <workItem from="1597625476214" duration="27581000" />
+      <workItem from="1597625476214" duration="28866000" />
     </task>
     <servers />
   </component>
