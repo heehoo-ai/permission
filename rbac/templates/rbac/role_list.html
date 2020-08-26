@@ -1,20 +1,23 @@
 {% extends 'layout.html' %}
+{% load rbac %}
 
 {% block content %}
     <div class="luffy-container">
         <div class="btn-group" style="margin: 5px 0">
-
-            <a class="btn btn-default" href="{% url 'rbac:role_add' %}">
-                <i class="fa fa-plus-square" aria-hidden="true"></i> 添加角色
-            </a>
-
+            {% if request|has_permission:'rbac:role_add' %}
+                <a class="btn btn-default" href="{% url 'rbac:role_add' %}">
+                    <i class="fa fa-plus-square" aria-hidden="true"></i> 添加角色
+                </a>
+            {% endif %}
         </div>
         <table class="table table-bordered table-hover">
             <thead>
             <tr>
                 <th>序号</th>
                 <th>名称</th>
-                <th>选项</th>
+                {% if request|has_permission:'rbac:role_edit' or request|has_permission:'rbac:role_del' %}
+                    <th>选项</th>
+                {% endif %}
 
             </tr>
             </thead>
@@ -23,16 +26,18 @@
                 <tr>
                     <td>{{ row.id }}</td>
                     <td>{{ row.title }}</td>
-                    <td>
-
-                        <a style="color: #333333;" href="{% url 'rbac:role_edit' pk=row.id %}">
-                            <i class="fa fa-edit" aria-hidden="true"></i></a>
-
-
-                        <a style="color: #d9534f;" href="{% url 'rbac:role_del' pk=row.id %}"><i
-                                class="fa fa-trash-o"></i></a>
-
-                    </td>
+                    {% if request|has_permission:'rbac:role_edit' or request|has_permission:'rbac:role_del' %}
+                        <td>
+                            {% if request|has_permission:'rbac:role_edit' %}
+                                <a style="color: #333333;" href="{% url 'rbac:role_edit' pk=row.id %}">
+                                    <i class="fa fa-edit" aria-hidden="true"></i></a>
+                            {% endif %}
+                            {% if request|has_permission:'rbac:role_del' %}
+                                <a style="color: #d9534f;" href="{% url 'rbac:role_del' pk=row.id %}"><i
+                                        class="fa fa-trash-o"></i></a>
+                            {% endif %}
+                        </td>
+                    {% endif %}
                 </tr>
             {% endfor %}
             </tbody>

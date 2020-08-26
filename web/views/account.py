@@ -9,13 +9,28 @@ def login(request):
     # 1. 用户登录
     if request.method == 'GET':
         return render(request, 'login.html')
-    user = request.POST.get('user')
-    pwd = request.POST.get('pwd')
+    user = request.POST.get('username')
+    pwd = request.POST.get('password')
 
-    current_user = models.UserInfo.objects.filter(name=user, password=pwd).first()
-    if not current_user:
-        return render(request, 'login.html', {'msg': '用户名或密码错误'})
+    user_object = models.UserInfo.objects.filter(name=user, password=pwd).first()
+    if not user_object:
+        return render(request, 'login.html', {'error': '用户名或密码错误'})
 
-    init_permission(current_user, request)
+    # 用户权限信息的初始化
+    init_permission(user_object, request)
 
-    return redirect('/customer/list/')
+    return redirect('/index/')
+
+
+def logout(request):
+    request.session.delete()
+    return  redirect('/login/')
+
+
+def index(request):
+    """
+    首页
+    :param request:
+    :return:
+    """
+    return render(request, 'index.html')

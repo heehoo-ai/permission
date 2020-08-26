@@ -166,12 +166,20 @@ FILE_UPLOAD_DIRECTORY_PERMISSIONS = None
 
 PERMISSION_SESSION_KEY = "luffy_permission_url_list_key"
 MENU_SESSION_KEY = "luffy_permission_menu_list_key"
+# 白名单
 VALID_URL_LIST = [
     '/login/',
     '/admin/.*'
 ]
-
-
+# 需要登录但无需权限的URL
+NO_PERMISSION_LIST = [
+    '/index/',
+    '/logout/',
+]
+# 自动化发现路由中URL时，排除的URL
 AUTO_DISCOVER_EXCLUDE = [
-    '/admin/.*'
+    '/admin/.*',
+    '/index/',
+    '/logout/',
+    '/login/',
 ]

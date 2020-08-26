@@ -153,7 +153,7 @@ RBAC组件的使用文档
 
 9. 通过中间件进行权限校验
 
-    # 权限校验
+    # settings.py
     MIDDLEWARE = [
         'django.middleware.security.SecurityMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
@@ -162,7 +162,7 @@ RBAC组件的使用文档
         'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
-        'rbac.middlewares.rbac.RbacMiddleware',
+        'rbac.middlewares.rbac.RbacMiddleware',  # 权限校验
     ]
 
     # 白名单，无需登录就可以访问
@@ -236,12 +236,12 @@ RBAC组件的使用文档
             <div class="pg-body">
                 <div class="left-menu">
                     <div class="menu-body">
-                        {% multi_menu request %}  # 开发时，去掉；上下时，取回。
+                        {% multi_menu request %}  # 开发时，去掉；上线时，取回。
                     </div>
                 </div>
                 <div class="right-body">
                     <div>
-                        {% breadcrumb request %} # 开发时，去掉；上下时，取回。
+                        {% breadcrumb request %} # 开发时，去掉；上线时，取回。
                     </div>
                     {% block content %} {% endblock %}
                 </div>

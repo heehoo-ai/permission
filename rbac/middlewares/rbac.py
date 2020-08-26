@@ -41,6 +41,15 @@ class RbacMiddleware(MiddlewareMixin):
              }
         ]
 
+        # 此处代码进行判断
+        for url in settings.NO_PERMISSION_LIST:
+            if re.match(url, request.path_info):
+                # 需要登录，但无需权限校验
+                request.current_selected_permission = 0
+                request.breadcrumb = url_record
+
+                return None
+
         for item in permission_dict.values():
             reg = "^%s$" % item['url']
             if re.match(reg, current_url):

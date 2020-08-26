@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ac47a565-c427-44c3-b1eb-c75e7766b336" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffy_permission/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffy_permission/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/account.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +273,7 @@
       <workItem from="1596428480514" duration="3553000" />
       <workItem from="1597019952643" duration="25269000" />
       <workItem from="1597625476214" duration="35265000" />
-      <workItem from="1598234550704" duration="15087000" />
+      <workItem from="1598234550704" duration="19092000" />
     </task>
     <servers />
   </component>
